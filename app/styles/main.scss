@@ -1,0 +1,295 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/support";
+@import "compass/utilities/general/hacks";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/sprites/sprite-img";
+
+@import "../images/ui/*.png";
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('../fonts/futurab-webfont.eot');
+  src:
+    url('../fonts/futurab-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futurab-webfont.woff') format('woff'),
+    url('../fonts/futurab-webfont.ttf') format('truetype'),
+    url('../fonts/futurab-webfont.otf') format('opentype'),
+    url('../fonts/futurab-webfont.svg#FuturaBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBook';
+  src: url('../fonts/futuran-webfont.eot');
+  src:
+    url('../fonts/futuran-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/futuran-webfont.woff') format('woff'),
+    url('../fonts/futuran-webfont.ttf') format('truetype'),
+    url('../fonts/futuran-webfont.otf') format('opentype'),
+    url('../fonts/futuran-webfont.svg#FuturaBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear:before,
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clear:after {clear: both;}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+body {
+  background: transparent;
+  font-family: 'FuturaBook', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  &.desktop {
+    width: 100%;
+    background-image: url(../images/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    &:before {
+      -webkit-transform: translate3d(0, 0, 0);
+      -webkit-animation: highlightItem 10s ease-in-out 0.5s infinite alternate;
+      background-image: url(../images/bg-shinny.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      content: "";
+      display: block;
+      height: 110%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 110%;
+      z-index: 2;
+    }
+    h1 {
+      color: #e43a50;
+      text-transform: uppercase;
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+    div.content {
+      height: 450px;
+      width: 100%;
+      top: 50%;
+      position: absolute;
+      margin-top: -325px;
+      letter-spacing: 2px;
+    }
+    div.sync {
+      @include ui-sprite(sync-smartphone-desktop);
+      height: 56px;
+      width: 164px;
+      margin: 0 auto 50px auto;
+    }
+    .instructions {
+      width: 890px;
+      margin: 44px auto;
+      h2 {
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.4em;
+      }
+      &>div {
+        float: left;
+      }
+      .circle {
+        height: 280px;
+        width: 280px;
+        @include border-radius(140px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding-top: 50px;
+        div {
+          padding-top: 16px;
+          margin: 40px auto;
+          background: #000;
+          background: rgba(0, 0, 0, 0.5);
+          width: 240px;
+          height: 48px;
+          font-size: 17px;
+          color: #fff;
+        }
+      }
+      .qr-code-container {
+        width: 330px;
+        img {
+          margin-top: 48px;
+          margin-bottom: 44px;
+        }
+        h2 {
+          position: relative;
+          &:before {
+            content: "^";
+            font-size: 30px;
+            position: absolute;
+            display: block;
+            width: 30px;
+            left: 50%;
+            margin-left: -15px;
+            top: -30px;
+            height: 20px;
+            font-family: Tahoma;
+          }
+        }
+      }
+    }
+    .cloud {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      @include transition(left 100ms linear);
+      &.left {
+
+      }
+      &.right {
+
+      }
+      &>div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        height: 100%;
+        position: absolute;
+      }
+
+      &#cloud1 { height: 108px; top: 450px; }
+      &#cloud2 { height: 556px; top: 0%; }
+      &#cloud3 { height: 150px; top: 300px; }
+      &#cloud4 { height: 186px; top: 1px; }
+      &#cloud5 { height: 352px; top: 190px; }
+      &#cloud6 { height: 317px; top: 95px; }
+      &#cloud7 { height: 218px; top: 350px; }
+      &#cloud8 { height: 252px; top: 10px; }
+
+      &#cloud1 div { background-image: url(../images/clouds/cloud-01.png); width: 339px; margin-left: -20px; }
+      &#cloud2 div { background-image: url(../images/clouds/cloud-02.png); width: 882px; margin-left: -120px; }
+      &#cloud3 div { background-image: url(../images/clouds/cloud-03.png); width: 327px; margin-left: 350px; }
+      &#cloud4 div { background-image: url(../images/clouds/cloud-04.png); width: 458px; margin-left: -330px; }
+      &#cloud5 div { background-image: url(../images/clouds/cloud-05.png); width: 656px; margin-left: -30px; }
+      &#cloud6 div { background-image: url(../images/clouds/cloud-06.png); width: 892px; margin-left: -620px; }
+      &#cloud7 div { background-image: url(../images/clouds/cloud-07.png); width: 673px; margin-left: -610px; }
+      &#cloud8 div { background-image: url(../images/clouds/cloud-08.png); width: 522px; margin-left: -180px; }
+    }
+    div.happy-new-year {
+      position: absolute;
+      left: 50%;
+      margin-left: -358px;
+      top: 50%;
+      margin-top: -350px;
+      h1 {
+        @include ui-sprite(happy-new-year);
+        height: ui-sprite-height(happy-new-year);
+        width: ui-sprite-width(happy-new-year);
+        margin: 0 auto;
+        @include opacity(0);
+        @include transition(opacity 1000ms ease 1000ms);
+      }
+      div.horse-stars {
+        margin: 30px auto 0 auto;
+        @include ui-sprite(horse-stars);
+        height: ui-sprite-height(horse-stars);
+        width: ui-sprite-width(horse-stars);
+        @include opacity(0);
+        @include transition(opacity 1000ms ease 3000ms);
+        div {
+          @include ui-sprite(horse);
+          height: ui-sprite-height(horse);
+          width: ui-sprite-width(horse);
+          @include opacity(0);
+          @include transition(opacity 1000ms ease 5000ms);
+        }
+      }
+      div.shooting-star {
+        @include opacity(0);
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        @include ui-sprite(shooting-star);
+        height: ui-sprite-height(shooting-star);
+        width: ui-sprite-width(shooting-star);
+        @include transition(all 1000ms ease 3000ms);
+      }
+      &.active {
+        h1 {
+          @include opacity(1);
+        }
+        div.horse-stars {
+          @include opacity(1);
+          div {
+            @include opacity(1);
+          }
+        }
+        div.shooting-star {
+          top: 110%;
+          left: 60%;
+        }
+      }
+    }
+    div.footer {
+      height: 120px;
+      width: 100%;
+      padding-top: 30px;
+      position: fixed;
+      bottom: 0;
+      z-index: 1000;
+      p {
+        color: #c4b191;
+        line-height: 1.4em;
+      }
+      a {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  }
+  &.mobile {
+    width: 640px;
+    background-image: url(../images/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    form {
+      padding-top: 220px;
+      input {
+        width: 460px;
+        height: 100px;
+        font-size: 50px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

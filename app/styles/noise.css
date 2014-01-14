@@ -1,0 +1,200 @@
+@-webkit-keyframes noise {
+  /* line 2, noise.scss */
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  /* line 7, noise.scss */
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
+  }
+
+  /* line 12, noise.scss */
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
+  }
+
+  /* line 17, noise.scss */
+  30% {
+    -webkit-transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
+  }
+
+  /* line 22, noise.scss */
+  40% {
+    -webkit-transform: translate(21%, 25%);
+    transform: translate(21%, 25%);
+  }
+
+  /* line 27, noise.scss */
+  50% {
+    -webkit-transform: translate(-25%, 10%);
+    transform: translate(-25%, 10%);
+  }
+
+  /* line 32, noise.scss */
+  60% {
+    -webkit-transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
+  }
+
+  /* line 37, noise.scss */
+  70% {
+    -webkit-transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
+  }
+
+  /* line 42, noise.scss */
+  80% {
+    -webkit-transform: translate(25%, 35%);
+    transform: translate(25%, 35%);
+  }
+
+  /* line 47, noise.scss */
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
+  }
+}
+
+@-ms-keyframes noise {
+  /* line 54, noise.scss */
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  /* line 59, noise.scss */
+  10% {
+    transform: translate(-5%, -10%);
+  }
+
+  /* line 64, noise.scss */
+  20% {
+    transform: translate(-15%, 5%);
+  }
+
+  /* line 69, noise.scss */
+  30% {
+    transform: translate(7%, -25%);
+  }
+
+  /* line 74, noise.scss */
+  40% {
+    transform: translate(21%, 25%);
+  }
+
+  /* line 79, noise.scss */
+  50% {
+    transform: translate(-25%, 10%);
+  }
+
+  /* line 84, noise.scss */
+  60% {
+    transform: translate(15%, 0%);
+  }
+
+  /* line 89, noise.scss */
+  70% {
+    transform: translate(0%, 15%);
+  }
+
+  /* line 94, noise.scss */
+  80% {
+    transform: translate(25%, 35%);
+  }
+
+  /* line 99, noise.scss */
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes noise {
+  /* line 106, noise.scss */
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  /* line 112, noise.scss */
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
+  }
+
+  /* line 118, noise.scss */
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
+  }
+
+  /* line 124, noise.scss */
+  30% {
+    -webkit-transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
+  }
+
+  /* line 130, noise.scss */
+  40% {
+    -webkit-transform: translate(21%, 25%);
+    transform: translate(21%, 25%);
+  }
+
+  /* line 136, noise.scss */
+  50% {
+    -webkit-transform: translate(-25%, 10%);
+    transform: translate(-25%, 10%);
+  }
+
+  /* line 142, noise.scss */
+  60% {
+    -webkit-transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
+  }
+
+  /* line 148, noise.scss */
+  70% {
+    -webkit-transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
+  }
+
+  /* line 154, noise.scss */
+  80% {
+    -webkit-transform: translate(25%, 35%);
+    transform: translate(25%, 35%);
+  }
+
+  /* line 160, noise.scss */
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noise\.scss;
+  }
+
+  line {
+    font-family: \00003167;
+  }
+}
+
+.container.desktop:after {
+  -webkit-animation: noise 5s 0s steps(5) infinite;
+  -ms-animation: noise 5s 0s steps(5) infinite;
+  animation: noise 5s 0s steps(5) infinite;
+  background: url("../images/noise-full.png");
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+  width: 300%;
+  z-index: 2;
+}

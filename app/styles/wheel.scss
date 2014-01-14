@@ -1,0 +1,188 @@
+@import "../images/ui-wheel/*.png";
+
+.wheel-game {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.wheel {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  @include ui-wheel-sprite(wheel);
+  display: inline-block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 3.5em;
+  width: 600px;
+  height: 600px;
+  z-index: 2;
+}
+
+.wheel.start {
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-name: rotation;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.wheel.start .shine {
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: shine;
+  -webkit-animation-timing-function: ease-out;
+  background-image: url(../images/wheel-shine.png);
+  background-position-x: -10em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100%;
+}
+
+.rotating {
+  -webkit-animation: rotation .2s infinite linear;
+  animation: rotation .2s infinite linear;
+}
+
+.rotating-inverse {
+  -webkit-animation: rotation-inverse .2s infinite linear;
+  animation: rotation-inverse .2s infinite linear;
+}
+
+@-webkit-keyframes shine {
+  from { background-position-x: -10em}
+  to   { background-position-x: 39em}
+}
+
+.seam {
+  display: inline;
+  height: 640px;
+  width: 640px;
+  left: 0;
+  margin: 0 auto;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 1em;
+}
+
+.howto {
+  display: inline;
+  height: 87px;
+  position: absolute;
+  right: 110px;
+  width: 90px;
+  top: 100px;
+  &>div {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: callToActionAnim 0.5s ease-in-out 0.5s infinite alternate;
+    @include ui-wheel-sprite(arrow);
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &#arrow2 {
+      top: 25px;
+      left: 25px;
+      -webkit-animation: callToActionAnim 0.5s ease-in-out 0.65s infinite alternate;
+    }
+    &#arrow3 {
+      top: 50px;
+      left: 50px;
+      -webkit-animation: callToActionAnim 0.5s ease-in-out 0.8s infinite alternate;
+    }
+  }
+}
+
+.hand {
+  @include ui-wheel-sprite(hand);
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  left: 0;
+  pointer-events: none;
+  position: relative;
+  top: 150px;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.stick {
+  @include ui-wheel-sprite(stick);
+  display: inline-block;
+  height: 504px;
+  width: 12px;
+  left: 50%;
+  margin-left: -6px;
+  pointer-events: none;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.callToAction {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: callToActionAnim 0.5s ease-in-out 0.5s infinite alternate;
+}
+
+.item {
+  box-sizing: border-box;
+  display: inline-table;
+  float: left;
+  height: 50%;
+  pointer-events: none;
+  width: 50%;
+}
+
+.top-left {
+  border-top-left-radius: 100%;
+  background-image: url(../images/wheel-item1.png);
+  background-size: cover;
+}
+.top-right {
+  border-top-right-radius: 100%;
+}
+.bottom-left {
+  border-bottom-left-radius: 100%;
+}
+.bottom-right {
+  border-bottom-right-radius: 100%;
+}
+
+.animate-item {
+  -webkit-animation: highlightItem 0.5s ease-in-out 0.5s infinite alternate;
+}
+
+@-webkit-keyframes callToActionAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to   {-webkit-transform: rotate(359deg);}
+}
+
+@-webkit-keyframes rotation-inverse {
+  from {-webkit-transform: rotate(359deg);}
+  to   {-webkit-transform: rotate(0deg);}
+}
+
+@-webkit-keyframes highlightItem {
+  from  { -webkit-transform: scale(1); }
+  to    { -webkit-transform: scale(1.2); }
+}
+

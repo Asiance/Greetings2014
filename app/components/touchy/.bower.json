@@ -1,0 +1,14 @@
+{
+  "name": "touchy",
+  "homepage": "https://github.com/HotStudio/touchy",
+  "_release": "410c9df30a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "410c9df30af5eba709243809a0d1f83a26862c5e"
+  },
+  "_source": "git://github.com/HotStudio/touchy.git",
+  "_target": "*",
+  "_originalSource": "touchy",
+  "_direct": true
+}

@@ -1,0 +1,641 @@
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000317;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000322;
+  }
+}
+
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000326;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000328;
+  }
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \00003103;
+  }
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \0000332;
+  }
+}
+
+a img {
+  border: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.13\.alpha\.4\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss;
+  }
+
+  line {
+    font-family: \00003116;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url("../fonts/futurab-webfont.eot");
+  src: url("../fonts/futurab-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futurab-webfont.woff") format("woff"), url("../fonts/futurab-webfont.ttf") format("truetype"), url("../fonts/futurab-webfont.otf") format("opentype"), url("../fonts/futurab-webfont.svg#FuturaBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBook';
+  src: url("../fonts/futuran-webfont.eot");
+  src: url("../fonts/futuran-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futuran-webfont.woff") format("woff"), url("../fonts/futuran-webfont.ttf") format("truetype"), url("../fonts/futuran-webfont.otf") format("opentype"), url("../fonts/futuran-webfont.svg#FuturaBook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000341;
+  }
+}
+
+.clear:before,
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000347;
+  }
+}
+
+.clear:after {
+  clear: both;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000349;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000355;
+  }
+}
+
+body {
+  background: transparent;
+  font-family: 'FuturaBook', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000363;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000367;
+  }
+}
+
+.container.desktop {
+  width: 100%;
+  background-image: url(../images/bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+.container.desktop h1 {
+  color: #e43a50;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000380;
+  }
+}
+
+.container.desktop div.content {
+  background-image: url(../images/bg-shinny.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 450px;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+  margin-top: -325px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000390;
+  }
+}
+
+.container.desktop div.sync {
+  background-image: url(../images/sync-smartphone-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 56px;
+  width: 164px;
+  margin: 0 auto 50px auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \0000399;
+  }
+}
+
+.container.desktop .instructions {
+  width: 890px;
+  margin: 44px auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003102;
+  }
+}
+
+.container.desktop .instructions h2 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003107;
+  }
+}
+
+.container.desktop .instructions > div {
+  float: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003110;
+  }
+}
+
+.container.desktop .instructions .circle {
+  height: 280px;
+  width: 280px;
+  border-radius: 140px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003116;
+  }
+}
+
+.container.desktop .instructions .circle div {
+  padding-top: 16px;
+  margin: 40px auto;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  width: 240px;
+  height: 48px;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003128;
+  }
+}
+
+.container.desktop .instructions .qr-code-container {
+  width: 330px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003130;
+  }
+}
+
+.container.desktop .instructions .qr-code-container img {
+  margin-top: 48px;
+  margin-bottom: 44px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003134;
+  }
+}
+
+.container.desktop .instructions .qr-code-container h2 {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003136;
+  }
+}
+
+.container.desktop .instructions .qr-code-container h2:before {
+  content: "^";
+  font-size: 30px;
+  position: absolute;
+  display: block;
+  width: 30px;
+  left: 50%;
+  margin-left: -15px;
+  top: -30px;
+  height: 20px;
+  font-family: Tahoma;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003151;
+  }
+}
+
+.container.desktop div.footer {
+  height: 120px;
+  width: 100%;
+  padding-top: 30px;
+  position: fixed;
+  bottom: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003157;
+  }
+}
+
+.container.desktop div.footer p {
+  color: #c4b191;
+  line-height: 1.4em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003161;
+  }
+}
+
+.container.desktop div.footer a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/noice\.scss;
+  }
+
+  line {
+    font-family: \00003168;
+  }
+}
+
+.container.mobile {
+  width: 640px;
+  background-image: url(../images/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

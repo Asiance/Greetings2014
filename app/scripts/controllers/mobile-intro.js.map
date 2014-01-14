@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "mobile-intro.js",
+  "sourceRoot": "",
+  "sources": [
+    "mobile-intro.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,UAAA;CAAA,CAEA,CACiC,GADjC,CAAO,EAC2B,CADlC,OAAA;CAGI,CAAA,CAAmB,CAAnB,EAAM,GAAN;CAEO,EAAa,EAAA,CAAd,GAAe,CAArB,CAAA;CACE,IAAK,CAAL,QAAA;CAAA,EACA,GAAA,CAAO,EAAP,uBAAY;CACF,EAAkB,CAA5B,EAAkC,GAAzB,CAAM,GAAf;CAP2B,IAIT;CALxB,EACiC;CAHjC"
+}
