@@ -5,16 +5,17 @@
       return {
         restrict: "C",
         scope: {
-          distance: "@"
+          distance: "@",
+          speed: "@"
         },
         link: function(scope, element) {
           var originalRatio;
           originalRatio = 714;
           scope.$watch('distance', function(before, after) {
             if ($(element).hasClass('left')) {
-              return element.css('left', '-' + after / 2 + '%');
+              return element.css('left', '-' + (after / 2) * parseFloat(scope.speed) + '%');
             } else {
-              return element.css('left', after / 2 + '%');
+              return element.css('left', (after / 2) * parseFloat(scope.speed) + '%');
             }
           });
         }

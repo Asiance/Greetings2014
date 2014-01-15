@@ -7,6 +7,9 @@
       $scope.windVelocity = 0;
       $scope.distance = 0;
       console.log("[Debug] GreetingsCtrl, room ID: " + $scope.room);
+      socket.emit('connect-desktop', {
+        room: $scope.room
+      });
       animateGreeting = function() {
         $scope.distance = $scope.distance + $scope.windVelocity;
       };

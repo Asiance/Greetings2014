@@ -9,6 +9,10 @@ angular.module('horseApp')
 
     console.log "[Debug] GreetingsCtrl, room ID: " + $scope.room
 
+    socket.emit('connect-desktop',
+      room: $scope.room
+    )
+
     animateGreeting = () ->
       $scope.distance = $scope.distance + $scope.windVelocity
       return

@@ -6,9 +6,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>The Breezing Experience</title>
+    <meta name="description" content="Asiance wishes you a happy new year through an interactive desktop-mobile experience.">
     <meta name="viewport" content="width=640">
+
+    <meta property="og:title" content="The Breezing Experience">
+    <meta property="og:type" content="company">
+    <meta property="og:url" content="http://2014.asiance.com/">
+    <meta property="og:description" content="Asiance wishes you a happy new year through an interactive desktop-mobile experience.">
+    <meta property="og:image" content="http://www.asiance.com/images/fb_share.png">
 
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -40,20 +46,19 @@
     <![endif]-->
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="components/jquery/jquery.min.js"></script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="components/jquery/jquery.js"></script>
     <script src="components/angular/angular.js"></script>
-    <script src="components/angular-socket-io/socket.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
+    
+    <script src="components/angular-socket-io/socket.js"></script>
     <script src="components/touchy/jquery.touchy.min.js"></script>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -65,6 +70,7 @@
     <script src="scripts/services/socket.js"></script>
     <script src="scripts/directives/wheel.js"></script>
     <script src="scripts/directives/cloud.js"></script>
+    <script src="scripts/directives/wind.js"></script>
     <script src="scripts/directives/happy-new-year.js"></script>
     <!-- endbuild -->
 </body>

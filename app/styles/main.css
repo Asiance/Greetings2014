@@ -246,8 +246,9 @@ summary {
 .container.desktop div.happy-new-year h1,
 .container.desktop div.happy-new-year div.horse-stars,
 .container.desktop div.happy-new-year div.horse-stars div,
-.container.desktop div.happy-new-year div.shooting-star {
-  background-image: url('../images/../images/ui-s8167b01bf1.png');
+.container.desktop div.happy-new-year div.shooting-star,
+.container.mobile div.sync {
+  background-image: url('../images/../images/ui-sd6d5198fec.png');
   background-repeat: no-repeat;
 }
 
@@ -356,7 +357,7 @@ body.desktop {
 }
 
 body {
-  background: transparent;
+  background: #000;
   font-family: 'FuturaBook', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 15px;
@@ -496,13 +497,29 @@ p.browsehappy {
   letter-spacing: 2px;
 }
 
+@media all and (max-height: 650px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003117;
+    }
+}
+
+  .container.desktop div.content {
+    margin-top: -280px;
+  }
+}
+
 @media -sass-debug-info {
   filename {
     font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003125;
+    font-family: \00003128;
   }
 }
 
@@ -519,7 +536,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003131;
+    font-family: \00003134;
   }
 }
 
@@ -534,7 +551,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003134;
+    font-family: \00003137;
   }
 }
 
@@ -550,7 +567,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003139;
+    font-family: \00003142;
   }
 }
 
@@ -564,7 +581,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003142;
+    font-family: \00003145;
   }
 }
 
@@ -582,7 +599,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003148;
+    font-family: \00003151;
   }
 }
 
@@ -603,7 +620,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003159;
+    font-family: \00003162;
   }
 }
 
@@ -617,7 +634,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003161;
+    font-family: \00003164;
   }
 }
 
@@ -632,7 +649,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003165;
+    font-family: \00003168;
   }
 }
 
@@ -646,7 +663,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003167;
+    font-family: \00003170;
   }
 }
 
@@ -669,7 +686,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003182;
+    font-family: \00003185;
   }
 }
 
@@ -689,7 +706,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003190;
+    font-family: \00003193;
   }
 }
 
@@ -707,7 +724,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003198;
+    font-family: \00003201;
   }
 }
 
@@ -722,7 +739,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003199;
+    font-family: \00003202;
   }
 }
 
@@ -737,7 +754,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003200;
+    font-family: \00003203;
   }
 }
 
@@ -752,7 +769,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003201;
+    font-family: \00003204;
   }
 }
 
@@ -767,7 +784,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003202;
+    font-family: \00003205;
   }
 }
 
@@ -782,7 +799,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003203;
+    font-family: \00003206;
   }
 }
 
@@ -797,7 +814,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003204;
+    font-family: \00003207;
   }
 }
 
@@ -812,7 +829,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003205;
+    font-family: \00003208;
   }
 }
 
@@ -827,7 +844,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003207;
+    font-family: \00003210;
   }
 }
 
@@ -843,7 +860,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003208;
+    font-family: \00003211;
   }
 }
 
@@ -859,7 +876,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003209;
+    font-family: \00003212;
   }
 }
 
@@ -875,7 +892,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003210;
+    font-family: \00003213;
   }
 }
 
@@ -891,7 +908,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003211;
+    font-family: \00003214;
   }
 }
 
@@ -907,7 +924,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003212;
+    font-family: \00003215;
   }
 }
 
@@ -923,7 +940,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003213;
+    font-family: \00003216;
   }
 }
 
@@ -939,7 +956,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003214;
+    font-family: \00003217;
   }
 }
 
@@ -955,7 +972,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003216;
+    font-family: \00003219;
   }
 }
 
@@ -967,13 +984,29 @@ p.browsehappy {
   margin-top: -350px;
 }
 
+@media all and (max-height: 675px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003219;
+    }
+}
+
+  .container.desktop div.happy-new-year {
+    margin-top: -310px;
+  }
+}
+
 @media -sass-debug-info {
   filename {
     font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
   }
 
   line {
-    font-family: \00003222;
+    font-family: \00003228;
   }
 }
 
@@ -992,7 +1025,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003229;
+    font-family: \00003235;
   }
 }
 
@@ -1003,8 +1036,8 @@ p.browsehappy {
   width: 368px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition-delay: 1000ms;
-  transition: opacity 1000ms ease 1000ms;
+  -webkit-transition-delay: 100ms;
+  transition: opacity 1000ms ease 100ms;
 }
 
 @media -sass-debug-info {
@@ -1013,7 +1046,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003236;
+    font-family: \00003242;
   }
 }
 
@@ -1023,8 +1056,8 @@ p.browsehappy {
   width: 368px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition-delay: 3000ms;
-  transition: opacity 1000ms ease 3000ms;
+  -webkit-transition-delay: 2000ms;
+  transition: opacity 1000ms ease 2000ms;
 }
 
 @media -sass-debug-info {
@@ -1033,7 +1066,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003244;
+    font-family: \00003250;
   }
 }
 
@@ -1056,7 +1089,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003255;
+    font-family: \00003261;
   }
 }
 
@@ -1071,7 +1104,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003258;
+    font-family: \00003264;
   }
 }
 
@@ -1086,7 +1119,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003260;
+    font-family: \00003266;
   }
 }
 
@@ -1101,7 +1134,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003264;
+    font-family: \00003270;
   }
 }
 
@@ -1116,7 +1149,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003270;
+    font-family: \00003276;
   }
 }
 
@@ -1135,7 +1168,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003277;
+    font-family: \00003283;
   }
 }
 
@@ -1150,7 +1183,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003281;
+    font-family: \00003287;
   }
 }
 
@@ -1166,7 +1199,25 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003288;
+    font-family: \00003293;
+  }
+}
+
+.container.desktop object {
+  position: absolute;
+  bottom: 135px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003301;
   }
 }
 
@@ -1184,12 +1235,15 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003294;
+    font-family: \00003307;
   }
 }
 
-.container.mobile form {
-  padding-top: 220px;
+.container.mobile p {
+  font-size: 32px;
+  line-height: 1.3em;
+  padding: 0 30px;
+  margin-bottom: 1em;
 }
 
 @media -sass-debug-info {
@@ -1198,7 +1252,52 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003296;
+    font-family: \00003312;
+  }
+}
+
+.container.mobile p span {
+  color: #e43a50;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media all and (max-height: 600px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003307;
+    }
+}
+
+  .container.mobile p {
+    display: none;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003320;
+  }
+}
+
+.container.mobile form {
+  padding-top: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003322;
   }
 }
 
@@ -1209,4 +1308,94 @@ p.browsehappy {
   padding: 20px;
   text-align: center;
   margin-bottom: 50px;
+  border: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003333;
+  }
+}
+
+.container.mobile form input[type="submit"] {
+  background: #e43a50;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003338;
+  }
+}
+
+.container.mobile form input[type="text"] {
+  color: #fff;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-height: 600px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003320;
+    }
+}
+
+  .container.mobile form {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    margin-left: -280px;
+    width: 560px;
+    padding-top: 60px;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003353;
+  }
+}
+
+.container.mobile a {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003358;
+  }
+}
+
+.container.mobile div.sync {
+  background-position: 0 -937px;
+  height: 56px;
+  width: 164px;
+  margin: 0 auto 50px auto;
 }
