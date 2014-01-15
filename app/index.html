@@ -8,22 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+    <meta name="viewport" content="width=640">
+
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/wheel.css">
     <link rel="stylesheet" href="styles/noise.css">
     <!-- endbuild -->
-    <meta name="viewport" content="width=640, user-scalable=no">
   </head>
-  <body ng-app="horseApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <body ng-app="horseApp" ng-class="media">
+    <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
@@ -36,8 +31,7 @@
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+       ga('create', 'UA-1115917-72');
     </script>
 
     <!--[if lt IE 9]>
@@ -46,20 +40,21 @@
     <![endif]-->
 
     <script src="/socket.io/socket.io.js"></script>
-
     <script src="components/jquery/jquery.min.js"></script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="components/jquery/jquery.js"></script>
     <script src="components/angular/angular.js"></script>
+    <script src="components/angular-socket-io/socket.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
     <script src="components/angular-route/angular-route.js"></script>
-    <script src="components/angular-socket-io/socket.js"></script>
-    <script src="components/touchy/jquery.touchy.js "></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script src="components/touchy/jquery.touchy.min.js"></script>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>

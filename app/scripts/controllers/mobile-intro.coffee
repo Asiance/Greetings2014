@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('horseApp')
-  .controller 'MobileIntroCtrl', ($scope, $location) ->
+  .controller 'MobileIntroCtrl', ["$scope", "$location", ($scope, $location) ->
 
     $scope.inputRoom = ""
 
@@ -9,3 +9,4 @@ angular.module('horseApp')
       event.preventDefault()
       console.log("[Debug] Room number submited: " + $scope.inputRoom);
       $location.path '/mobile/' + $scope.inputRoom
+  ]

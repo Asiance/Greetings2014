@@ -1,20 +1,12 @@
 
 "use strict"
 
-angular.module('horseApp').directive "wheelGame", ["$location", ($location) ->
+angular.module('horseApp').directive "wheelGame", [ ->
   restrict: "EC"
   replace: true
-
-  # '<div class="item top-left"></div>' +
-  # '<div class="item top-right"></div>' +
-  # '<div class="item bottom-left"></div>' +
-  # '<div class="item bottom-right"></div>' +
   template: "<div>" + "<div class=\"wheel\">" + "<div class=\"shine\"></div>" + "</div>" + "<div class=\"seam\"><div class=\"hand callToAction\"></div><div class=\"howto\"><div id=\"arrow1\"></div><div id=\"arrow2\"></div><div id=\"arrow3\"></div></div></div>" + "<div class=\"stick\"></div>" + "</div>"
 
   link: ($rootScope, $scope) ->
-
-    # DIRTY FIX NON IDENTIFIED BUG
-
     ###
     Computes the rotation degrees of an html element
     @param <element> element

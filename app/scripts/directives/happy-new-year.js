@@ -9,7 +9,7 @@
         },
         link: function(scope, element) {
           scope.$watch('distance', function(before, after) {
-            console.log(after);
+            $(element).find("h1").css('opacity', parseFloat(after) / 100);
             if (parseFloat(after) >= 100) {
               $('.cloud').fadeOut();
               return element.addClass('active');

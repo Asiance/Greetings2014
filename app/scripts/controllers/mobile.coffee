@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('horseApp')
-  .controller 'MobileCtrl', ($scope, $routeParams, $location, socket) ->
+  .controller 'MobileCtrl', ["$scope", "$routeParams", "$location", "socket", ($scope, $routeParams, $location, socket) ->
 
     $scope.room = $routeParams.room
 
@@ -12,6 +12,7 @@ angular.module('horseApp')
     $scope.$on 'rotate-wheel', (event, data) ->
       socket.emit('rotate-wheel',
         velocity: data.velocity
+        room: $scope.room
       )
 
     socket.on('message', (message) ->
@@ -19,3 +20,4 @@ angular.module('horseApp')
         alert "Wrong code. Please retry."
         $location.path "/mobile-intro/"
     )
+  ]

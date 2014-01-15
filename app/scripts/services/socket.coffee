@@ -1,5 +1,6 @@
 'use strict'
 
 angular.module('horseApp')
-  .factory 'socket', (socketFactory) ->
+  .factory 'socket', ["socketFactory", (socketFactory) ->
     return socketFactory()
+  ]

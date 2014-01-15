@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('horseApp')
-  .controller 'MainCtrl', ($scope, $location, $cookieStore, socket) ->
+  .controller 'MainCtrl', ["$scope", "$location", "$cookieStore", "socket", ($scope, $location, $cookieStore, socket) ->
 
     if !$cookieStore.get('connected')
       $scope.room = Base58.numberToAlpha(new Date().getTime().toString().substr(0,11))
@@ -16,3 +16,4 @@ angular.module('horseApp')
     socket.on "go-greetings", (data) ->
       console.log "[Debug] User connected, going to greetings page: " + data.room
       $location.path "greetings/" + $scope.room
+  ]

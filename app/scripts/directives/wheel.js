@@ -1,7 +1,7 @@
 (function() {
   "use strict";
   angular.module('horseApp').directive("wheelGame", [
-    "$location", function($location) {
+    function() {
       return {
         restrict: "EC",
         replace: true,

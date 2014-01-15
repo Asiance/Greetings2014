@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('horseApp')
-  .controller 'GreetingsCtrl', ($scope, socket, $routeParams) ->
+  .controller 'GreetingsCtrl', ["$scope", "$routeParams", "socket", ($scope, $routeParams, socket) ->
 
     $scope.room = $routeParams.room
     $scope.windVelocity = 0
@@ -16,3 +16,4 @@ angular.module('horseApp')
     socket.on "rotate-wheel", (data) ->
       $scope.windVelocity = data.velocity
       animateGreeting()
+  ]
