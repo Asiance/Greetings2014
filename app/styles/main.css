@@ -252,29 +252,13 @@ summary {
   background-repeat: no-repeat;
 }
 
-@font-face {
-  font-family: 'FuturaBold';
-  src: url("../fonts/futurab-webfont.eot");
-  src: url("../fonts/futurab-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futurab-webfont.woff") format("woff"), url("../fonts/futurab-webfont.ttf") format("truetype"), url("../fonts/futurab-webfont.otf") format("opentype"), url("../fonts/futurab-webfont.svg#FuturaBold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FuturaBook';
-  src: url("../fonts/futuran-webfont.eot");
-  src: url("../fonts/futuran-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/futuran-webfont.woff") format("woff"), url("../fonts/futuran-webfont.ttf") format("truetype"), url("../fonts/futuran-webfont.otf") format("opentype"), url("../fonts/futuran-webfont.svg#FuturaBook") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @media -sass-debug-info {
   filename {
     font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
   }
 
   line {
-    font-family: \0000336;
+    font-family: \0000310;
   }
 }
 
@@ -289,7 +273,7 @@ summary {
   }
 
   line {
-    font-family: \0000343;
+    font-family: \0000317;
   }
 }
 
@@ -307,7 +291,7 @@ summary {
   }
 
   line {
-    font-family: \0000349;
+    font-family: \0000323;
   }
 }
 
@@ -321,7 +305,7 @@ summary {
   }
 
   line {
-    font-family: \0000351;
+    font-family: \0000325;
   }
 }
 
@@ -338,7 +322,7 @@ body {
   }
 
   line {
-    font-family: \0000357;
+    font-family: \0000331;
   }
 }
 
@@ -352,16 +336,16 @@ body.desktop {
   }
 
   line {
-    font-family: \0000361;
+    font-family: \0000335;
   }
 }
 
 body {
   background: #000;
-  font-family: 'FuturaBook', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt", "FuturaBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media -sass-debug-info {
@@ -370,7 +354,7 @@ body {
   }
 
   line {
-    font-family: \0000369;
+    font-family: \0000343;
   }
 }
 
@@ -384,7 +368,7 @@ body {
   }
 
   line {
-    font-family: \0000373;
+    font-family: \0000347;
   }
 }
 
@@ -405,7 +389,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \0000384;
+    font-family: \0000358;
   }
 }
 
@@ -421,7 +405,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \0000388;
+    font-family: \0000362;
   }
 }
 
@@ -429,7 +413,7 @@ p.browsehappy {
   width: 100%;
   background-image: url(../images/bg-desktop.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
   overflow: hidden;
 }
@@ -440,7 +424,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \0000395;
+    font-family: \0000369;
   }
 }
 
@@ -467,15 +451,12 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003111;
+    font-family: \0000385;
   }
 }
 
-.container.desktop h1 {
-  color: #e43a50;
-  text-transform: uppercase;
-  font-size: 17px;
-  letter-spacing: 2px;
+.container.desktop strong {
+  font-weight: 700;
 }
 
 @media -sass-debug-info {
@@ -484,17 +465,101 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003117;
+    font-family: \0000388;
+  }
+}
+
+.container.desktop h1 {
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000394;
+  }
+}
+
+.container.desktop h2 {
+  color: #e43a50;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003102;
   }
 }
 
 .container.desktop div.content {
-  height: 450px;
+  height: 550px;
   width: 100%;
   top: 50%;
   position: absolute;
-  margin-top: -325px;
+  margin-top: -375px;
   letter-spacing: 2px;
+}
+
+@media all and (max-height: 800px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003102;
+    }
+}
+
+  .container.desktop div.content {
+    margin-top: -355px;
+  }
+}
+
+@media all and (max-height: 770px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003102;
+    }
+}
+
+  .container.desktop div.content {
+    margin-top: -340px;
+  }
+}
+
+@media all and (max-height: 680px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/var\/www\/asiance\/2014\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003102;
+    }
+}
+
+  .container.desktop div.content {
+    margin-top: -310px;
+  }
 }
 
 @media all and (max-height: 650px) {
@@ -504,7 +569,7 @@ p.browsehappy {
     }
 
     line {
-      font-family: \00003117;
+      font-family: \00003102;
     }
 }
 
@@ -519,7 +584,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003128;
+    font-family: \00003122;
   }
 }
 
@@ -536,13 +601,13 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003134;
+    font-family: \00003128;
   }
 }
 
 .container.desktop .instructions {
-  width: 890px;
-  margin: 44px auto;
+  width: 880px;
+  margin: 15px auto;
 }
 
 @media -sass-debug-info {
@@ -551,11 +616,11 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003137;
+    font-family: \00003131;
   }
 }
 
-.container.desktop .instructions h2 {
+.container.desktop .instructions h3 {
   font-size: 18px;
   color: #fff;
   line-height: 1.4em;
@@ -567,7 +632,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003142;
+    font-family: \00003136;
   }
 }
 
@@ -581,7 +646,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003145;
+    font-family: \00003139;
   }
 }
 
@@ -590,7 +655,7 @@ p.browsehappy {
   width: 280px;
   border-radius: 140px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 @media -sass-debug-info {
@@ -599,16 +664,16 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003151;
+    font-family: \00003145;
   }
 }
 
 .container.desktop .instructions .circle div {
   padding-top: 16px;
-  margin: 40px auto;
+  margin: 35px auto;
   background: #000;
   background: rgba(0, 0, 0, 0.5);
-  width: 240px;
+  width: 220px;
   height: 48px;
   font-size: 17px;
   color: #fff;
@@ -620,12 +685,12 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003162;
+    font-family: \00003156;
   }
 }
 
 .container.desktop .instructions .qr-code-container {
-  width: 330px;
+  width: 320px;
 }
 
 @media -sass-debug-info {
@@ -634,7 +699,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003164;
+    font-family: \00003158;
   }
 }
 
@@ -649,12 +714,13 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003168;
+    font-family: \00003162;
   }
 }
 
-.container.desktop .instructions .qr-code-container h2 {
+.container.desktop .instructions .qr-code-container h3 {
   position: relative;
+  font-weight: 500;
 }
 
 @media -sass-debug-info {
@@ -663,11 +729,11 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003170;
+    font-family: \00003165;
   }
 }
 
-.container.desktop .instructions .qr-code-container h2:before {
+.container.desktop .instructions .qr-code-container h3:before {
   content: "^";
   font-size: 30px;
   position: absolute;
@@ -686,7 +752,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003185;
+    font-family: \00003180;
   }
 }
 
@@ -706,7 +772,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003193;
+    font-family: \00003188;
   }
 }
 
@@ -724,7 +790,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003201;
+    font-family: \00003196;
   }
 }
 
@@ -739,7 +805,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003202;
+    font-family: \00003197;
   }
 }
 
@@ -754,7 +820,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003203;
+    font-family: \00003198;
   }
 }
 
@@ -769,7 +835,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003204;
+    font-family: \00003199;
   }
 }
 
@@ -784,7 +850,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003205;
+    font-family: \00003200;
   }
 }
 
@@ -799,7 +865,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003206;
+    font-family: \00003201;
   }
 }
 
@@ -814,7 +880,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003207;
+    font-family: \00003202;
   }
 }
 
@@ -829,7 +895,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003208;
+    font-family: \00003203;
   }
 }
 
@@ -844,7 +910,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003210;
+    font-family: \00003205;
   }
 }
 
@@ -860,7 +926,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003211;
+    font-family: \00003206;
   }
 }
 
@@ -876,7 +942,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003212;
+    font-family: \00003207;
   }
 }
 
@@ -892,7 +958,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003213;
+    font-family: \00003208;
   }
 }
 
@@ -908,7 +974,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003214;
+    font-family: \00003209;
   }
 }
 
@@ -924,7 +990,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003215;
+    font-family: \00003210;
   }
 }
 
@@ -940,7 +1006,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003216;
+    font-family: \00003211;
   }
 }
 
@@ -956,7 +1022,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003217;
+    font-family: \00003212;
   }
 }
 
@@ -972,7 +1038,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003219;
+    font-family: \00003214;
   }
 }
 
@@ -991,7 +1057,7 @@ p.browsehappy {
     }
 
     line {
-      font-family: \00003219;
+      font-family: \00003214;
     }
 }
 
@@ -1006,7 +1072,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003228;
+    font-family: \00003223;
   }
 }
 
@@ -1025,7 +1091,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003235;
+    font-family: \00003230;
   }
 }
 
@@ -1046,7 +1112,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003242;
+    font-family: \00003237;
   }
 }
 
@@ -1066,7 +1132,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003250;
+    font-family: \00003245;
   }
 }
 
@@ -1089,7 +1155,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003261;
+    font-family: \00003256;
   }
 }
 
@@ -1104,7 +1170,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003264;
+    font-family: \00003259;
   }
 }
 
@@ -1119,7 +1185,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003266;
+    font-family: \00003261;
   }
 }
 
@@ -1134,7 +1200,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003270;
+    font-family: \00003265;
   }
 }
 
@@ -1149,12 +1215,12 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003276;
+    font-family: \00003271;
   }
 }
 
 .container.desktop div.footer {
-  height: 120px;
+  height: 100px;
   width: 100%;
   padding-top: 30px;
   position: fixed;
@@ -1168,13 +1234,17 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003283;
+    font-family: \00003278;
   }
 }
 
 .container.desktop div.footer p {
-  color: #c4b191;
+  color: #fff;
   line-height: 1.4em;
+  margin: 0 auto;
+  width: 370px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
 @media -sass-debug-info {
@@ -1183,7 +1253,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003287;
+    font-family: \00003286;
   }
 }
 
@@ -1199,7 +1269,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003293;
+    font-family: \00003292;
   }
 }
 
@@ -1217,7 +1287,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003301;
+    font-family: \00003300;
   }
 }
 
@@ -1235,7 +1305,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003307;
+    font-family: \00003306;
   }
 }
 
@@ -1252,7 +1322,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003312;
+    font-family: \00003311;
   }
 }
 
@@ -1268,7 +1338,7 @@ p.browsehappy {
     }
 
     line {
-      font-family: \00003307;
+      font-family: \00003306;
     }
 }
 
@@ -1283,7 +1353,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003320;
+    font-family: \00003319;
   }
 }
 
@@ -1297,7 +1367,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003322;
+    font-family: \00003321;
   }
 }
 
@@ -1319,7 +1389,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003333;
+    font-family: \00003332;
   }
 }
 
@@ -1335,7 +1405,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003338;
+    font-family: \00003337;
   }
 }
 
@@ -1352,7 +1422,7 @@ p.browsehappy {
     }
 
     line {
-      font-family: \00003320;
+      font-family: \00003319;
     }
 }
 
@@ -1373,7 +1443,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003353;
+    font-family: \00003352;
   }
 }
 
@@ -1389,7 +1459,7 @@ p.browsehappy {
   }
 
   line {
-    font-family: \00003358;
+    font-family: \00003357;
   }
 }
 
